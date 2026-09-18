@@ -1,0 +1,123 @@
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.nav-link {
+    border: none;
+    background: transparent;
+    color: #4b5563;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: #ea580c;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+
+.nav-links {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+
+
+/* heroo */
+.recipe-image-container {
+    height: 400px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.tab-button {
+    border-bottom: 3px solid transparent !important;
+    color: #6c757d !important;
+    transition: 0.2s;
+}
+
+.tab-button.active {
+    border-bottom: 3px solid #f97316 !important;
+    color: #f97316 !important;
+}
+
+.action-btn {
+    width: 48px;
+    height: 48px;
+}
+
+.recipe-tab-content {
+    height: 350px;
+}
+
+.ingredient-number {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #f97316;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: #f97316;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.nutrition-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ background-color: #FFEDD4;
+
+}
+.fa-fire {
+    color:#F54900 ;
+}
+.fa-wheat-awn{
+    color:#D08700;
+}
+@media (min-width: 992px) {
+    .recipe-image-container {
+        height: 750px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .nav-links {
+        width: auto;
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+}

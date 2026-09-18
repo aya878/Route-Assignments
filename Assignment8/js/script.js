@@ -19,11 +19,7 @@ tabButtons.forEach(function (button) {
 });
 
 
-
-
-// ===============================
 // Recipes Data
-// ===============================
 
 var recipes = [
     {
@@ -221,10 +217,59 @@ var recipes = [
             "Use fresh pasta sheets for best texture",
             "Freeze leftovers in individual portions"
         ]
+    },
+
+     {
+        name: "Honey Garlic Salmon",
+        image: "images/honey.jpg",
+        rating: 4.9,
+        reviews: 187,
+        prepTime: "10 min",
+        cookTime: "15 min",
+        servings: "2 people",
+        difficulty: "Easy",
+        category: "Seafood",
+        description: "Pan-seared salmon with a sweet and savory glaze",
+
+        ingredients: [
+            "2 salmon fillets (6oz each)",
+            "3 tablespoons honey",
+            "2 tablespoons soy sauce",
+            "4 cloves garlic, minced",
+            "1 tablespoon olive oil",
+            "1 teaspoon fresh ginger, grated",
+            "Sesame seeds for garnish",
+            "Green onions, sliced"
+        ],
+
+        instructions: [
+            "Pat salmon fillets dry with paper towels. Season with salt and pepper.",
+            "In a small bowl, whisk together honey, soy sauce, minced garlic, and grated ginger.",
+            "Heat olive oil in a large skillet over medium-high heat.",
+            "Place salmon fillets skin-side up in the pan. Cook for 4-5 minutes until golden.",
+            "Flip salmon and pour honey garlic sauce over the top. Cook for another 4-5 minutes.",
+            "Garnish with sesame seeds and sliced green onions. Serve with steamed vegetables or rice."
+        ],
+
+        nutrition: {
+            calories: "380 kcal",
+            protein: "35g",
+            carbs: "28g",
+            fat: "14g",
+            fiber: "0g",
+            sodium: "720mg"
+        },
+
+        tips: [
+            "Don't overcook salmon - it should be slightly pink in the center",
+            "Use wild-caught salmon for best flavor and nutrition",
+            "Let the sauce caramelize slightly for deeper flavor",
+            "Pair with steamed broccoli or asparagus for a complete meal"
+        ]
     }
 ];
 
-let currentRecipeIndex = 0;
+var currentRecipeIndex = 0;
 
 
 var recipeImage = document.getElementById("recipe-image");
@@ -356,7 +401,7 @@ function updateTimeWarning(cookTime) {
 
 
 tryAnotherBtn.addEventListener("click", function () {
-    let randomIndex = Math.floor(Math.random() * recipes.length);
+    var randomIndex = Math.floor(Math.random() * recipes.length);
 
     currentRecipeIndex = randomIndex;
 

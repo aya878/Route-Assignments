@@ -1,4 +1,4 @@
-name: Deploy Assignment 8
+name: Deploy Assignments
 
 on:
   push:
@@ -25,10 +25,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Assignment 8
+      - name: Prepare Assignments
+        run: |
+          mkdir _site
+          cp -r Assignment8 _site/Assignment8
+          cp -r Assignment9 _site/Assignment9
+
+      - name: Upload Assignments
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './Assignment8'
+          path: './_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
